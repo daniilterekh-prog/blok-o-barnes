@@ -37,8 +37,9 @@
       .about-company__copy.is-open > p { display: block; }
       .about-company__copy-more { display: none; }
       .about-company__copy.is-open .about-company__copy-more { display: block; }
-      .about-company__read-more { align-items: center; background: transparent; border: 0; border-bottom: 1px solid var(--accent); color: var(--accent); cursor: pointer; display: inline-flex; font: inherit; font-size: 14px; letter-spacing: .12em; margin: 14px 0 0; padding: 0 0 7px; text-transform: uppercase; }
-      .about-company__read-more::after { content: "↗"; font-size: 17px; margin-left: 12px; }
+.about-company__read-more { align-items: center; background: transparent; border: 0; border-bottom: 1px solid var(--accent); color: var(--accent); cursor: pointer; display: inline-flex; font: inherit; font-size: 14px; letter-spacing: .12em; margin: 14px 0 0; padding: 0 0 7px; text-transform: uppercase; }
+.about-company__read-more-icon { display: inline-flex; flex: none; height: 15px; margin-left: 12px; width: 15px; }
+.about-company__read-more-icon svg { display: block; height: 100%; width: 100%; }
 
       @media (min-width: 901px) {
         .about-company__facts { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -103,7 +104,7 @@
                 <p>BARNES Saint Petersburg сохраняет лучшие традиции и исключительные черты бренда, включая безупречность и хороший вкус, и ждёт клиентов в просторном офисе на Социалистической, 21.</p>
                 <p>Регулярные встречи с партнёрами и инвесторами, лекции по искусству, гастрономические вечера и дегустации в лучших ресторанах — мы создаём эксклюзивное пространство для единомышленников и роста, где наших клиентов ждут безграничные возможности.</p>
               </div>
-              <button class="about-company__read-more" type="button" aria-controls="about-company-more" aria-expanded="false">Читать далее</button>
+<button class="about-company__read-more" type="button" aria-controls="about-company-more" aria-expanded="false">Читать далее<span class="about-company__read-more-icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg></span></button>
             </div>
           </div>
         </div>
